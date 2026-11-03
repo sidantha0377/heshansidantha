@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-body {
-  font-family: "Redaction", serif;
+html {
+  font-family: "Times New Roman", Times, serif;
 }
 
 .no-scrollbar::-webkit-scrollbar {
@@ -38,5 +38,5 @@ body {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif;
 } */

@@ -2,7 +2,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        redaction: ['Redaction', 'serif'],
+        times: ['"Times New Roman"', "Times", "serif"],
       },
     },
   },
