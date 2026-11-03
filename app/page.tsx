@@ -1,9 +1,9 @@
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
-import Experiance from "./components/Experiance";
+import Experience from "./components/Experience";
 import Project from "./components/ProjectSummary";
 import ConnectWithMe from "./components/ConnectWithMe";
-import Fotter from "./components/Fotter";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -13,20 +13,20 @@ export default function Home() {
       <aside className="flex w-full flex-col gap-6 p-2 sm:flex-row sm:items-start sm:justify-between sm:p-6 lg:h-full lg:w-1/3 lg:min-w-[30%] lg:flex-col">
         <Header />
         <div className="hidden lg:block">
-          <Fotter />
+          <Footer />
         </div>
       </aside>
 
 
       <main className="flex min-w-0 flex-1 flex-col gap-8 p-2 sm:p-6 lg:h-full lg:overflow-y-auto">
         <AboutMe />
-        <Experiance />
+        <Experience />
         <Project />
         <ConnectWithMe />
       </main>
 
       <div className="p-2 sm:p-6 lg:hidden">
-        <Fotter />
+        <Footer />
       </div>
     </div>
   );

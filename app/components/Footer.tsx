@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaGithubSquare, FaMediumM, FaLinkedin } from "react-icons/fa"
-export default function Fotter() {
+export default function Footer() {
     return (
 
         <div className='flex flex-col gap-3'>

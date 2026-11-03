@@ -3,7 +3,7 @@ import React from 'react'
 
 const ProDetail = [
     { name: "Neuromorphic Smart Sensor for Autonomous Underwater Vehicles", detail: "A neuromorphic-inspired perception system combining a software-based spiking neural network for obstacle detection with a tether-based geometric model for 3D positioning, delivering competitive accuracy at a fraction of the computational cost.", imgsrc: "img/nssf.jpg" },
-    { name: "Secure X Smart Locker System", detail: "The SmartSecure Locker System is an IoT-based solution for secure storage in shared spaces like universities, gyms, and offices. It features real-time locker availability, biometric access, and alternative location suggestions when lockers are full. Users can manage lockers via a mobile app, ensuring convenience and security.", imgsrc: "img/securex.jpg" },
+    { name: "SecureX Smart Locker System", detail: "This IoT-based system provides secure storage in shared spaces such as universities, gyms, and offices. It offers real-time locker availability, biometric access, and alternative location suggestions when lockers are full. Users can manage their lockers through a mobile app.", imgsrc: "img/securex.jpg" },
     { name: "FoodBuddy – Food Waste Reduction Platform", detail: "FoodBuddy helps restaurants reduce food waste by listing unsold items at discounted prices. Users can discover these offers from nearby restaurants.", imgsrc: "img/foodbuddy.jpg" }
 ]
 export default function Project() {
