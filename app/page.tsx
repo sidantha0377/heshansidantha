@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Experiance from "./components/Experiance";
-import Project from "./components/ProjectSummery";
+import Project from "./components/ProjectSummary";
 import ConnectWithMe from "./components/ConnectWithMe";
 import Fotter from "./components/Fotter";
 

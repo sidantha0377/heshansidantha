@@ -11,7 +11,7 @@ export default function Project() {
         <div>
             <h2 className="text-3xl font-bold pb-2 ">Projects</h2>
             {ProDetail.map((project) => (
-                <div className="rounded-xl border border-transparent p-6 transition-all duration-300 hover:border-emerald-500/40 hover:bg-[#002d22]/60 hover:shadow-lg hover:shadow-emerald-950/50" >
+                <div className="rounded-xl border border-transparent p-6 transition-all duration-300 hover:border-emerald-500/40 hover:bg-[#002d22]/60 hover:shadow-lg hover:shadow-emerald-950/50 gap-2" >
                     <div className='flex flex-row gap-2  '>
                         <div className="flex-shrink-0 w-full sm:w-40 h-28 overflow-hidden rounded-lg">
                             <img
