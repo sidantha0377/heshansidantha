@@ -1,6 +1,7 @@
 import { TbBrandNextjs, TbBrandAzure, TbBrandReactNative, TbBrandTypescript } from "react-icons/tb";
 import { SiApachekafka } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { Eye } from 'lucide-react';
 export default function Experience() {
     return (
         <div>
@@ -43,6 +44,17 @@ export default function Experience() {
                 </div>
 
             </div >
+            <div className="flex pt-2  w-full">
+                <a
+                    href="cvs/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-600 text-white font-semibold transition-all duration-300 hover:bg-emerald-500 hover:shadow-lg hover:shadow-emerald-900/40 active:scale-95"
+                >
+                    <span>View Full Resume</span>
+                    <Eye className="w-4 h-4" />
+                </a>
+            </div>
 
         </div >
     );

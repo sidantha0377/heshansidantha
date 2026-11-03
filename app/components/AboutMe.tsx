@@ -8,14 +8,14 @@ export default function AboutMe() {
         <div className="pt-4 sm:pt-8 lg:pt-30">
             <h2 className="text-3xl font-bold ">About Me</h2>
             <p className="pt-[2%] pb-[2%] text-base sm:text-xl" >
-                I am a final-year Computer Engineering undergraduate with hands-on experience developing
-                full-stack and cloud-based applications using Next.js, React, TypeScript, Spring Boot, and
-                PostgreSQL. As a Software Engineering Intern at FACTn Software, I contributed to a
-                multi-tenant applicant tracking system through database migration, asynchronous notification
-                services, and Docker-based development. I am seeking an entry-level Software Engineer or
-                Full-Stack Developer role.
+                Hi, I’m Heshan, a developer who enjoys building full-stack web apps.
+                I’m a strong problem solver with a solid grounding in data structures
+                and algorithms, core programming concepts and software architecture,
+                and I also understand hardware and computer architecture. I’ve learned
+                about AI and enjoy applying it, along with these other areas, to build
+                practical systems. I’m ready to start my career as a Software Engineer,
+                and I’d love to join a team where I can grow and contribute from day one.
             </p>
-
         </div >
     );
 }

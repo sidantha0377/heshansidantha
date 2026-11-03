@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen w-full flex-col overflow-x-hidden bg-gradient-to-r from-[#001a13] to-[#004c39] p-4 pt-4 font-['Times_New_Roman',_Times,_serif] text-white sm:pt-[2%] lg:h-screen lg:flex-row lg:overflow-hidden lg:pl-[2%]">
+    <div className="flex min-h-screen w-full flex-col overflow-x-hidden bg-gradient-to-r from-[#001a13] to-[#004c39] p-4 pt-4 text-white sm:pt-[2%] lg:h-screen lg:flex-row lg:overflow-hidden lg:pl-[2%]">
 
 
       <aside className="flex w-full flex-col gap-6 p-2 sm:flex-row sm:items-start sm:justify-between sm:p-6 lg:h-full lg:w-1/3 lg:min-w-[30%] lg:flex-col">

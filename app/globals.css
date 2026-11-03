@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  font-family: "Redaction", serif;
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }

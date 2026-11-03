@@ -13,8 +13,10 @@ export default function ConnectWithMe() {
                 say hello, my inbox is always open.
             </p>
             <a
-                href="mailto:hesnahs357@gmail.com"
-                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-600 text-white font-semibold transition-all duration-300 hover:bg-emerald-500 hover:shadow-lg hover:shadow-emerald-900/40 active:scale-95"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=heshansidantha357@gmail.com&su=Hello%20Heshan"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-600 text-white font-semibold transition-all duration-300 hover:bg-emerald-500 hover:shadow-lg hover:shadow-emerald-900/40 active:scale-95"
             >
                 <span>Connect</span>
                 <Send className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
