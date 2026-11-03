@@ -7,16 +7,16 @@ import Fotter from "./components/Fotter";
 
 export default function Home() {
   return (
-    <div className="flex h-screen w-full overflow-hidden bg-gradient-to-r from-[#001a13] to-[#004c39] text-white font-['Times_New_Roman',_Times,_serif] p-4 pl-[2%] pt-[2%]">
+    <div className="flex min-h-screen w-full flex-col overflow-x-hidden bg-gradient-to-r from-[#001a13] to-[#004c39] p-4 pt-4 font-['Times_New_Roman',_Times,_serif] text-white sm:pt-[2%] lg:h-screen lg:flex-row lg:overflow-hidden lg:pl-[2%]">
 
 
-      <aside className="w-1/3 min-w-[30%] h-full p-6 flex flex-col justify-between">
+      <aside className="flex w-full flex-row items-start justify-between gap-6 p-2 sm:p-6 lg:h-full lg:w-1/3 lg:min-w-[30%] lg:flex-col">
         <Header />
         <Fotter />
       </aside>
 
 
-      <main className="flex-1 h-full overflow-y-auto p-6 flex flex-col gap-8">
+      <main className="flex min-w-0 flex-1 flex-col gap-8 p-2 sm:p-6 lg:h-full lg:overflow-y-auto">
         <AboutMe />
         <Experiance />
         <Project />

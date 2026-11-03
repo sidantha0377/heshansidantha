@@ -6,9 +6,9 @@ export default function Experiance() {
         <div>
             <h2 className="text-3xl font-bold pb-2 ">Experiance</h2>
 
-            <div className="rounded-xl border border-transparent p-6 transition-all duration-300 hover:border-emerald-500/40 hover:bg-[#002d22]/60 hover:shadow-lg hover:shadow-emerald-950/50">
-                <div className="flex flex-row gap-2 ">
-                    <div className=" w-1/4 min-w-[10%]">
+            <div className="rounded-xl border border-transparent p-4 transition-all duration-300 hover:border-emerald-500/40 hover:bg-[#002d22]/60 hover:shadow-lg hover:shadow-emerald-950/50 sm:p-6">
+                <div className="flex flex-col gap-3 sm:flex-row sm:gap-2">
+                    <div className="sm:w-1/4 sm:min-w-[10%]">
                         APR - OCT 2026
                     </div>
                     <div>
@@ -21,7 +21,7 @@ export default function Experiance() {
                             <p>I also migrated the database from non-relational Azure Table Storage to PostgreSQL, and collaborated with the
                                 team on the Docker-based deployment process. </p>
                         </div>
-                        <div className="flex flex-row gap-4 pt-3">
+                        <div className="flex flex-row flex-wrap gap-4 pt-3">
                             <a aria-label="Next.js">
                                 <TbBrandNextjs size={40} />
                             </a>

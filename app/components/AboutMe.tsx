@@ -5,9 +5,9 @@ import { FaGithubSquare, FaMediumM, FaLinkedin } from "react-icons/fa"
 export default function AboutMe() {
 
     return (
-        <div className="pt-30">
+        <div className="pt-4 sm:pt-8 lg:pt-30">
             <h2 className="text-3xl font-bold ">About Me</h2>
-            <p className="text-xl   pt-[2%] pb-[2%] " >
+            <p className="pt-[2%] pb-[2%] text-base sm:text-xl" >
                 Final-year Computer Engineering undergraduate with hands-on experience developing full-stack
                 and cloud-based applications using Next.js, React, TypeScript, Spring Boot, and PostgreSQL.
                 Software Engineering Intern at FACTn Software, contributing to a multi-tenant Applicant

@@ -11,18 +11,18 @@ export default function Project() {
         <div>
             <h2 className="text-3xl font-bold pb-2 ">Projects</h2>
             {ProDetail.map((project) => (
-                <div className="rounded-xl border border-transparent p-6 transition-all duration-300 hover:border-emerald-500/40 hover:bg-[#002d22]/60 hover:shadow-lg hover:shadow-emerald-950/50" >
-                    <div className='flex flex-row gap-2  '>
-                        <div className="flex-shrink-0 w-full sm:w-40 h-28 overflow-hidden rounded-lg">
+                <div key={project.name} className="rounded-xl border border-transparent p-4 transition-all duration-300 hover:border-emerald-500/40 hover:bg-[#002d22]/60 hover:shadow-lg hover:shadow-emerald-950/50 sm:p-6">
+                    <div className="flex flex-col gap-4 sm:flex-row">
+                        <div className="h-48 w-full flex-shrink-0 overflow-hidden rounded-lg sm:h-28 sm:w-40">
                             <img
                                 src={project.imgsrc}
                                 alt={project.name}
                                 className="w-full h-full object-cover"
                             />
                         </div>
-                        <div>
-                            <h1 className="text-xl font-bold ">{project.name}</h1>
-                            <div className="text-xl gap-2">
+                        <div className="min-w-0">
+                            <h3 className="text-lg font-bold sm:text-xl">{project.name}</h3>
+                            <div className="gap-2 text-base sm:text-lg">
                                 <p>{project.detail}</p>
                             </div>
                         </div>
