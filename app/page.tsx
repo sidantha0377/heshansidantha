@@ -17,7 +17,7 @@ export default function Home() {
 
           <nav
             aria-label="Main navigation"
-            className="flex flex-wrap gap-x-4 gap-y-2 text-sm sm:text-base lg:flex-col lg:gap-3"
+            className="hidden flex-wrap gap-x-4 gap-y-2 text-sm sm:text-base lg:flex lg:flex-col lg:gap-3"
           >
             <a className="transition-colors hover:text-emerald-300 text-xl focus-visible:text-emerald-300" href="#about">About</a>
             <a className="transition-colors hover:text-emerald-300 text-xl focus-visible:text-emerald-300" href="#experience">Experience</a>
