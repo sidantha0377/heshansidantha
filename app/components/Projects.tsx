@@ -1,13 +1,40 @@
+"use client";
+
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import SpotlightCard from "./SpotlightCard";
 import { projectsdeep } from "../data/projects";
 
 export default function Projects() {
+    const wrapRef = useRef<HTMLDivElement>(null);
+    const heroRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const clamp = (v: number, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+        const update = () => {
+            if (!wrapRef.current || !heroRef.current) return;
+            const scrolled = -wrapRef.current.getBoundingClientRect().top;
+            const p = clamp(scrolled / (window.innerHeight * 0.85));
+            const el = heroRef.current;
+            el.style.opacity = String(1 - clamp(p * 1.15));
+            el.style.filter = `blur(${p * 18}px)`;
+            el.style.transform = `scale(${1 + p * 0.08}) translateY(${p * -30}px)`;
+        };
+        update();
+        window.addEventListener("scroll", update, { passive: true });
+        window.addEventListener("resize", update);
+        return () => {
+            window.removeEventListener("scroll", update);
+            window.removeEventListener("resize", update);
+        };
+    }, []);
+
     return (
 
-        <div>
-            <div className="sticky top-0 z-10 flex min-h-[65svh] flex-col items-center justify-center px-5 py-10 text-center lg:static lg:min-h-0 lg:p-100">
+        <div ref={wrapRef} className="relative">
+
+            <div ref={heroRef} className="sticky top-0 z-0 flex min-h-[100svh] flex-col items-center justify-center px-5 py-10 text-center will-change-[opacity,filter,transform]">
                 <h1 className="text-center text-4xl font-bold sm:text-9xl">PROJECTS</h1>
                 <p className="mt-4 text-center text-base leading-relaxed text-emerald-50/80 sm:text-xl">
                     A selection of projects I have worked on, from intelligent sensing systems to
