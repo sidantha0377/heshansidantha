@@ -40,6 +40,13 @@ export default function Projects() {
                     A selection of projects I have worked on, from intelligent sensing systems to
                     practical platforms for everyday problems.
                 </p>
+                <Link
+                    href="/"
+                    className="group inline-flex items-center gap-2 rounded-xl border border-transparent px-4 py-3 transition-all duration-300 hover:border-emerald-500/40 hover:bg-[#002d22]/60 hover:shadow-lg hover:shadow-emerald-950/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300"
+                >
+                    <ArrowLeft className="transition-transform duration-300 group-hover:-translate-x-1" />
+                    Back to Home
+                </Link>
             </div>
             <div className="relative z-20 grid gap-5 bg-gradient-to-r from-[#001a13] to-[#004c39] p-4 sm:gap-6 sm:p-20 lg:z-auto lg:bg-none md:grid-cols-3">
                 {projectsdeep.map((project, index) => (
