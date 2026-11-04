@@ -3,7 +3,7 @@ import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
 import Project from "./components/ProjectSummary";
 import ConnectWithMe from "./components/ConnectWithMe";
-import Footer from "./components/Footer";
+import { Footer } from "./components/Footer";
 
 export default function Home() {
   return (
