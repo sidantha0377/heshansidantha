@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaGithubSquare, FaMediumM, FaLinkedin } from "react-icons/fa"
+import { FaGithubSquare, FaMediumM, FaLinkedin, FaInstagramSquare } from "react-icons/fa"
 export default function Footer() {
     return (
 
@@ -13,6 +13,10 @@ export default function Footer() {
                 </a>
                 <a href="https://www.linkedin.com/in/heshan-sidantha-5b9925296/">
                     <FaLinkedin size={40} />
+
+                </a>
+                <a href="https://www.instagram.com/heshan_sidantha">
+                    <FaInstagramSquare size={40} />
                 </a>
             </div>
             <div>
