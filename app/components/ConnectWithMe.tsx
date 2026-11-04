@@ -3,7 +3,7 @@ import { Send } from 'lucide-react';
 
 export default function ConnectWithMe() {
     return (
-        <div>
+        <div id="contact" className="scroll-mt-4">
             <h2 className='text-3xl font-bold'>
                 Connect with me
             </h2>

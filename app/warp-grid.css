@@ -1,0 +1,47 @@
+/* Warp Grid style. Use with <WarpGrid /> (components/WarpGrid.tsx) */
+.warp-grid {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(to right, #001a13, #004c39);
+
+  /* Appearance */
+  --wg-mode: digits;
+  /* dots | text | digits */
+  --wg-font: courier;
+  /* mono | courier | sans | serif */
+  --wg-font-size: 5px;
+  --wg-shuffle: 0;
+  /* changes per second */
+  --wg-spacing: 10px;
+  --wg-dot-color: #004c39;
+  --wg-background: transparent;
+
+  /* Mask */
+  --wg-origin-x: 50%;
+  --wg-origin-y: 50%;
+  --wg-expansion: 100%;
+  --wg-feathering: 100%;
+
+  /* Wave */
+  --wg-wave: on;
+  --wg-speed: 10.5s;
+  --wg-length: 60%;
+  --wg-force: 10;
+  --wg-ripples: 1;
+  --wg-wave-glow: #5f5f5f;
+
+  /* Cursor */
+  --wg-cursor: on;
+  --wg-cursor-mode: attract;
+  /* attract | repel */
+  --wg-radius: 30px;
+  --wg-pull: 4;
+
+  /* Trail and motion blur */
+  --wg-trail: off;
+  --wg-motion-blur: off;
+}

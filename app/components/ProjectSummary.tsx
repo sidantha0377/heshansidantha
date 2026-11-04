@@ -1,5 +1,6 @@
 import React from 'react'
 import { GraduationCap } from 'lucide-react';
+import SpotlightCard from "./SpotlightCard";
 
 const ProDetail = [
     { name: "Neuromorphic Smart Sensor for Autonomous Underwater Vehicles", detail: "A neuromorphic-inspired perception system combining a software-based spiking neural network for obstacle detection with a tether-based geometric model for 3D positioning, delivering competitive accuracy at a fraction of the computational cost.", imgsrc: "img/nssf.jpg" },
@@ -8,10 +9,10 @@ const ProDetail = [
 ]
 export default function Project() {
     return (
-        <div>
+        <div id="projects" className="scroll-mt-4">
             <h2 className="text-3xl font-bold pb-2 ">Projects</h2>
             {ProDetail.map((project) => (
-                <div key={project.name} className="rounded-xl border border-transparent p-4 transition-all duration-300 hover:border-emerald-500/40 hover:bg-[#002d22]/60 hover:shadow-lg hover:shadow-emerald-950/50 sm:p-6">
+                <SpotlightCard key={project.name} className="rounded-xl border border-transparent p-4 transition-all duration-300 hover:border-emerald-500/40 hover:bg-[#002d22]/60 hover:shadow-lg hover:shadow-emerald-950/50 sm:p-6">
                     <div className="flex flex-col gap-4 sm:flex-row">
                         <div className="h-48 w-full flex-shrink-0 overflow-hidden rounded-lg sm:h-28 sm:w-40">
                             <img
@@ -27,13 +28,13 @@ export default function Project() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </SpotlightCard>
             ))
             }
             <div className=' pt-2 flex justify-end w-full'>
                 <a
                     href="/projects"
-                    className="inline-flex items-center justify-center gap-2 px-5  py-2.5 rounded-lg bg-emerald-600 text-white font-semibold transition-all duration-300 hover:bg-emerald-500 hover:shadow-lg hover:shadow-emerald-900/40 active:scale-95"
+                    className="group inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-600 text-white font-semibold transition-all duration-300 hover:bg-emerald-500 hover:shadow-lg hover:shadow-emerald-900/40 active:scale-95"
                 >
                     <span>Learn More</span>
                     <GraduationCap className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />

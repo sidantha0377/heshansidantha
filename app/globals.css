@@ -4,6 +4,36 @@ html {
   font-family: "Times New Roman", Times, serif;
 }
 
+.spotlight-card {
+  position: relative;
+  isolation: isolate;
+}
+
+.spotlight-card::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(280px circle at var(--spotlight-x, 50%) var(--spotlight-y, 50%),
+      rgb(52 211 153 / 18%),
+      transparent 70%);
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease-out;
+}
+
+.spotlight-card>* {
+  position: relative;
+  z-index: 1;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .spotlight-card:hover::before {
+    opacity: 1;
+  }
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
