@@ -3,9 +3,9 @@ import { Send } from 'lucide-react';
 
 export default function ConnectWithMe() {
     return (
-        <div id="contact" className="scroll-mt-4">
+        <div id="contact" className="scroll-mt-4 pt-4 sm:pt-8 lg:pt-30">
             <h2 className='text-3xl font-bold'>
-                Connect with me
+                Connect With Me
             </h2>
             <p className="pt-[2%] pb-[2%] text-base   sm:text-xl" >
                 I'm currently open to work and looking for new opportunities where I can

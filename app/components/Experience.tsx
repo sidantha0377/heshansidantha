@@ -5,7 +5,7 @@ import { ArrowUpRight } from 'lucide-react';
 import SpotlightCard from "./SpotlightCard";
 export default function Experience() {
     return (
-        <div id="experience" className="scroll-mt-4">
+        <div id="experience" className="scroll-mt-4 pt-4 sm:pt-8 lg:pt-30">
             <h2 className="text-3xl font-bold pb-2 ">Experience</h2>
 
             <SpotlightCard className="rounded-xl border border-transparent p-4 transition-all duration-300 hover:border-emerald-500/40 hover:bg-[#002d22]/60 hover:shadow-lg hover:shadow-emerald-950/50 sm:p-6">

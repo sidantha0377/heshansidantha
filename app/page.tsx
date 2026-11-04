@@ -31,7 +31,7 @@ export default function Home() {
         </aside>
 
 
-        <main className="flex min-w-0 flex-1 flex-col gap-8 p-2 scroll-smooth sm:p-6 lg:h-full lg:overflow-y-auto">
+        <main className="flex min-w-0 flex-1 flex-col gap-[5%] p-2 scroll-smooth sm:p-6 lg:h-full lg:overflow-y-auto">
           <AboutMe />
           <Experience />
           <Project />
