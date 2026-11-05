@@ -20,6 +20,14 @@ export const projects = [
 ];
 export const projectsdeep = [
     {
+        name: "Drift Field",
+        detail:
+            "Drift Field is a collection of tools for creating stunning CSS backgrounds without the guesswork. Design warp grids, flowing patterns, and layered effects with live controls, preview them instantly, and copy production-ready CSS straight into your project. No images, no heavy libraries, just lightweight code that looks great on any screen.",
+        imgsrc: "/img/driftfield.png",
+        ongoing:true,
+        projectPage :"https://driftfield-nine.vercel.app/"
+    },
+    {
         name: "Neuromorphic Smart Sensor for Autonomous Underwater Vehicles",
         detail:
             "A neuromorphic-inspired perception system combining a software-based spiking neural network for obstacle detection with a tether-based geometric model for 3D positioning, delivering competitive accuracy at a fraction of the computational cost.",
